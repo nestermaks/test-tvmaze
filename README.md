@@ -67,3 +67,13 @@ Replace deadwood with the TV show name you want to search for. You will receive 
 ```bash
 ./vendor/bin/sail test
 ```
+
+### Further improvements
+
+#### Feature Enhancements
+- **Advanced Search Filters**: Add advanced search filters such as genre, rating, and release date range.
+- **User Authentication and Authorization**: Implement user authentication and authorization mechanisms to personalize user experiences.
+
+#### Error Handling
+- **Enhanced Error Responses**: Implement more descriptive error messages and standardized error codes.
+- **Retry Mechanism**: Implement a retry mechanism for failed requests to the TVMaze API.
