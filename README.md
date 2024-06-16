@@ -8,10 +8,10 @@
 ### Installation
 
 1. Clone the repository:
-   ```bash
+```bash
 git clone https://github.com/nestermaks/test-tvmaze.git
 cd test-tvmaze
-   ```
+```
 
 2. Install PHP dependencies using Docker:
 ```bash
@@ -36,6 +36,16 @@ docker run --rm \
     -w /var/www/html \
     laravelsail/php83-composer:latest \
     php artisan key:generate
+```
+
+5. Run the migrations and confirm the prompt to create the database if it does not exist:
+```bash
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v "$(pwd):/var/www/html" \
+    -w /var/www/html \
+    laravelsail/php83-composer:latest \
+    php artisan migrate
 ```
 
 ### Running the application
